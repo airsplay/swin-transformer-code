@@ -1,0 +1,15 @@
+TRAIN:
+  WEIGHT_DECAY: 0.3
+  BASE_LR: 3e-4
+  OPTIMIZER:
+    BETAS: (0.9, 0.98)
+DATA:
+  IMG_SIZE: 224
+MODEL:
+  TYPE: vit
+  NAME: vit_base_32
+  VIT:
+    PATCH_SIZE: 32
+    WIDTH: 768
+    LAYERS: 12
+    NUM_HEADS: 12

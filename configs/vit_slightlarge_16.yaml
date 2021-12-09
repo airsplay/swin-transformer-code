@@ -1,0 +1,17 @@
+TRAIN:
+  WEIGHT_DECAY: 0.3
+  BASE_LR: 2e-4
+  OPTIMIZER:
+    BETAS: (0.9, 0.98)
+  EPOCHS: 50
+  WARMUP_EPOCHS: 10
+DATA:
+  IMG_SIZE: 224
+MODEL:
+  TYPE: vit
+  NAME: vit_slightlarge_16
+  VIT:
+    PATCH_SIZE: 16
+    WIDTH: 896
+    LAYERS: 16
+    NUM_HEADS: 16
